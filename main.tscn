@@ -32,7 +32,7 @@ curve = SubResource( 1 )
 
 [node name="LocalGeraçãoTurba" type="PathFollow2D" parent="CaminhoTurba"]
 position = Vector2( -0.370361, 1.60992 )
-rotation = -0.00195709
+rotation = -0.00195713
 
 [node name="Turba" parent="." instance=ExtResource( 3 )]
 
