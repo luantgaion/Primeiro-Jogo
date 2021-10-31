@@ -11,20 +11,20 @@ animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "up",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "walk",
-"speed": 10.0
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 26.0708
-height = 12.4517
+radius = 27.0
+height = 13.0
 
 [node name="Player" type="Area2D"]
-position = Vector2( -0.264862, 0.529732 )
+position = Vector2( 0.5, -0.5 )
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
@@ -37,5 +37,3 @@ animation = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
-
-[connection signal="body_entered" from="." to="." method="_on_Player_body_entered"]
